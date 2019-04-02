@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>NBA</title>
+	</head>
+	<link rel="stylesheet" href="css/style.css" />
+	<!--导入js-->
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/javascript.js" type="text/javascript" charset="utf-8"></script>
+	<!--<script>
+		function setTab(name, cursel, n) {
+			for(i = 1; i <= n; i++) {
+				var menu = document.getElementById(name + i);
+				var con = document.getElementById("con_" + name + "_" + i);
+				menu.className = i == cursel ? "hover" : "";
+				con.style.display = i == cursel ? "block" : "none";
+			}
+		}
+	</script>-->
+
+	<body>
+		<img src="img/play.png" id="musicbtn" onclick="playMusic(this)" />
+		<audio src="mp3/Bon Jovi - It's My Life.mp3" loop="loop" id="music"></audio>
+		<div id="box">
+			<ul id="list">
+				<li class="select"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+
+			<div id="imgbox">
+				<img class="first" src="img/a1.jpg" />
+				<img src="img/a2.jpg" />
+				<img src="img/a3.jpg" />
+				<img src="img/a4.jpg" />
+				<img src="img/a5.jpg" />
+				<img src="img/a6.jpg" />
+				<img src="img/a7.jpg" />
+				<img src="img/a8.jpg" />
+			</div>
+			<!--<div id="nav">
+				<div class="nav1 thisbox">
+					<a class="current" href="#">首页</a>
+				</div>
+				<div class="nav1">
+					<a href="#">名人堂</a>
+				</div>
+				<div class="nav1">
+					<a class="2k" href="#">2K-Online</a>
+				</div>
+				<div class="nav1">
+					<a href="#">打地鼠</a>
+				</div>
+				<div class="nav1">
+					<a href="#">NBA动画</a>
+				</div>
+			</div>-->
+			<div id="Menubox">
+				<ul>
+					<li id="menu1" class="hover" onmouseover="setTab('menu',1,5)">首页</li>
+					<li id="menu2" onmouseover="setTab('menu',2,5)">名人堂</li>
+					<li id="menu3" onmouseover="setTab('menu',3,5)">2K-Online</li>
+					<li id="menu4" onmouseover="setTab('menu',4,5)">打地鼠</li>
+					<li id="menu5" onmouseover="setTab('menu',5,5)">NBA视频</li>
+				</ul>
+			</div>
+			<div id="Contentbox">
+				<div id="con_menu_1" class="hover">
+
+				</div>
+				<div id="con_menu_2" style="display:none">
+					<figure id="view1">
+						<img src="img/1.jpg" />
+						<figcaption>
+							<h1>--姚明</h1>
+							<p class="info p1">2002年，他以状元秀身份被NBA的休斯敦火箭队选中。</p>
+							<p class="info p2">2003年至2008年连续六个赛季入选NBA西部全明星阵容。</p>
+							<p class="info p3">2009年，姚明收购上海男篮，成为上海篮球俱乐部老板。</p>
+						</figcaption>
+					</figure>
+					<figure id="view2">
+						<img src="img/2.jpg" />
+						<figcaption>
+							<h2>Allen Iverson</h2>
+							<p>他们不可能打倒我,除非杀了我,而任何不能杀了我的就只会令我更坚强!</p>
+							<div class="sbox">
+
+							</div>
+						</figcaption>
+					</figure>
+					<figure id="view3">
+						<img src="img/3.jpg" />
+						<figcaption>
+							<h3>Tim Duncan</h3>
+							<p>职业生涯五度夺得NBA总冠军；两次获选NBA常规赛最有价值球员（MVP）；三次获选NBA总决赛最有价值球员（FMVP）；十五次入选NBA最佳阵容（并列历史第一）；十五次入选NBA最佳防守阵容（历史第一)。</p>
+							<div class="sbox2">
+
+							</div>
+						</figcaption>
+					</figure>
+					<figure id="view4">
+						<img src="img/4.jpg" />
+						<figcaption>
+							<h4>Kobe Bryant</h4>
+							<div class="sbox3">
+
+							</div>
+							<div class="sbox4">
+
+							</div>
+						</figcaption>
+					</figure>
+					<figure id="view5">
+						<img src="img/5.jpg" />
+						<figcaption>
+							<h5>Michael Jordan</h5>
+							<p class="p1">乔丹获得个人职业生涯第10个得分王</p>
+							<p class="p2">乔丹率领公牛队第六次夺得总冠军</p>
+						</figcaption>
+					</figure>
+					<figure id="view6">
+						<img src="img/6.jpg" />
+						<figcaption>
+							<div class="ssbox1">
+								<p>我是麦蒂</p>
+							</div>
+							<div class="ssbox2">
+								<p>35秒得到13分不是神话</p>
+							</div>
+							<div class="ssbox3">
+								<p>我渴望挑战，从而获取进步</p>
+							</div>
+							<div class="ssbox4">
+								<p>如果单挑，上帝都不是我的对手</p>
+							</div>
+
+						</figcaption>
+					</figure>
+				</div>
+				<div id="con_menu_3" style="display:none">
+					<div id="content3">
+						<div id="box1">
+						<a class="a1" href="#">新闻资讯</a>
+						<a class="a2" href="#">攻略秘籍</a>
+						<a class="a3" href="#">游戏下载</a>
+						<a class="a4" href="#">游戏图片</a>
+						<a class="a5" href="#">游戏视频</a>
+						<a class="a6" href="#">游戏评论</a>
+					</div>
+					<div id="box2">
+						<div class="sbox1">
+							<img class="pic" src="img/2k5.jpg.png" />
+							<h1>NBA 2K17</h1>
+							<h2>nba 2k17</h2>
+							<div class="ssbox1">
+								<a href="#">下载</a>
+							</div>
+						</div>
+						<div class="sbox2">
+							<img src="img/2k1.jpg" />
+							<p>制作公司:2k Sports</p>
+							<p>发行公司:2k Games</p>
+							<p>游戏平台:Pc/Xbox360/Xboxone/PS3/PS4</p>
+							<p>游戏类型:体育</p>
+							<p>发售日期:2016.09.20</p>
+							<p>游戏标签:3D</p>
+
+						</div>
+
+					</div>
+					<div id="box3">
+						<div class="sbox1">
+							<h>游戏介绍</h>
+						</div>
+						<div class="sbox2">
+							<p>《nba 2k17》是一款2K Sports、2K Games发行的体育竞技游戏。</p>
+							<img src="img/2k2.jpg" />
+						</div>
+					</div>
+					<div id="box4">
+						<div class="sbox1">
+							<div class="ssbox1">
+								<h>游戏攻略</h>
+								<a href="#">更多></a>
+							</div>
+							<div class="ssbox2">
+								<img class="pic1" src="img/2k3.jpg" />
+								<img class="pic2" src="img/2k4.jpg" />
+							</div>
+							<div class="ssbox3">
+								<ul>
+									<li>
+										<a href="#">《NBA 2k17》王朝模式内容及玩法介绍</a>
+									</li>
+									<li>
+										<a href="#">《NBA 2k17》传奇经理模式内容玩法介绍</a>
+									</li>
+									<li>
+										<a href="#">《NBA 2k17》MC模式球员受伤恢复方法</a>
+									</li>
+									<li>
+										<a href="#">《NBA 2k17》MC摸式修改身高体重教程</a>
+									</li>
+									<li>
+										<a href="#">《NBA 2k17》强行扣篮技巧解析</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="sbox2">
+							<div class="ssbox1">
+								<h>游戏下载</h>
+								<a href="#">更多></a>
+							</div>
+							<div class="ssbox2">
+								<img src="img/2k1.jpg" />
+								<a href="#">《NBA 2k17》官方中文传奇版下载</a>
+							</div>
+						</div>
+					</div>
+					</div>
+					
+				</div>
+				<div id="con_menu_4" style="display:none">
+					<div id="menu4_bg_box">
+						<img src="img/logo.jpg" onclick="beat(this)" />
+						<img src="img/logo.jpg" onclick="beat(this)" />
+						<img src="img/logo.jpg" onclick="beat(this)" />
+						<img src="img/logo.jpg" onclick="beat(this)" />
+						<img src="img/logo.jpg" onclick="beat(this)" />
+						<img src="img/logo.jpg" onclick="beat(this)" />
+						<img src="img/logo.jpg" onclick="beat(this)" />
+						<img src="img/logo.jpg" onclick="beat(this)" />
+						<img src="img/logo.jpg" onclick="beat(this)" />
+					</div>
+					<div class="menu4_play_box">
+						<div class="time_box">
+							<p id="time">时间：00</p>
+						</div>
+						<div class="num_box">
+							<p id="num">得分：0</p>
+						</div>
+						<div class="rank_box">
+							<div class="chu">
+								<p id="rank_chu" onclick="section(1)">初级</p>
+							</div>
+							<div class="zhong">
+								<p id="rank_zhong" onclick="section(2)">中级</p>
+							</div>
+							<div class="gao">
+								<p id="rank_gao" onclick="section(3)">高级</p>
+							</div>
+						</div>
+						<div class="on_box_start">
+							<p id="start" onclick="startBtn(this)">开始游戏</p>
+						</div>
+						<div class="on_box_over">
+							<p id="over" onclick="overBtn(this)">结束游戏</p>
+						</div>
+					</div>
+				</div>
+				<div id="con_menu_5">
+					<div class="container">
+						<video width="100%" height="600">
+							<source src="mp4/a001924r7j2.10401.1.mp4" type="video/mp4">
+							<source src="movie.webm" type="video/webm">
+						</video>
+					</div>
+				</div>
+			</div>
+			<div id="copyright">
+				<p class="text">Copyright © 宋子轩 All rights reserved.</p>
+			</div>
+
+			<div class="top_bar">
+				<nav>
+					<ul id="top_menu" class="top_menu">
+						<input type="checkbox" id="plug-btn" class="plug-menu themeStyle" style="background-image:url('img/plug.png');">
+						<li class="themeStyle out">
+							<a href="#"><label>技术团队：</label></a>
+						</li>
+						<li class="themeStyle out">
+							<a href="#"><label>宋子轩</label></a>
+						</li>
+						<li class="themeStyle out">
+							<a href="#"><label>暂无</label></a>
+						</li>
+						<li class="themeStyle out">
+							<a href="#"><label>暂无</label></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+		</div>
+	</body>
+
+</html>
